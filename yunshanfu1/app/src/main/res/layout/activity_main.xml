@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+        android:layout_width="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.chuxin.socket.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="金额:"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="备注:"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="生成二维码"
+        android:textSize="19sp"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="打开AndNotifyMonitor"
+        android:textSize="19sp"
+        android:onClick="open"
+        android:visibility="gone"/>
+     <TextView
+         android:id="@+id/lable"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textIsSelectable="true"
+         android:layout_margin="10dp"
+         android:background="#FFF"
+         android:minHeight="200dp"/>
+
+</LinearLayout>
+</ScrollView>
